@@ -1,26 +1,26 @@
-# <b>Kapan<span style="color:red;">Libur</span>?</b> - Aplikasi dan Widget Daftar Libur Nasional Indonesia
+# **KapanLibur? - Aplikasi dan Widget Daftar Libur Nasional Indonesia**
 
 Aplikasi Android modern yang di buat dengan Kotlin untuk menampilkan hari libur nasional Indonesia menggunakan API [https://libur.deno.dev/](https://libur.deno.dev/).
 
-## Fitur
+## Fitur Aplikasi
 
 ### 🏠 Aplikasi Utama
 - **Daftar Hari Libur**: Lihat semua hari libur nasional Indonesia.
 - **Filter Tahun dan bulan**: Pilih tahun berbeda untuk melihat hari libur.
 - **Pencarian**: Cari hari libur berdasarkan nama perayaan.
 
-![Main Screen](preview/main_screen.jpg)
+<img src="preview/main_screen.jpg" alt="Gambar Main Screen" width="35%">
 
 ### 📅 Widget
 - **Hari Libur Mendatang**: Menampilkan dua hari libur mendatang.
 - **Tombol Refresh**: Refresh data hari libur jika gagal memuat data.
 
-![Widget](preview/widget.png)
+<img src="preview/widget.png" alt="Gambar Widget" width="60%">
 
-## Penggunaan
+## Cara Instalasi dan Penggunaan
 
-1. Unduh aplikasi dari [Halaman Rilis](https://placeholder-link-to-release-page.com).
-2. Instal APK di perangkat Android Anda.
+1. Unduh aplikasi dari [Halaman Rilis](https://github.com/tRikhan/KapanLibur/releases/tag/1.0.0).
+2. Instal APK di perangkat Android Anda. (disarankan versi android 10+)
 3. Buka aplikasi dan jelajahi hari libur nasional Indonesia.
 4. Tambahkan widget ke layar utama untuk untuk melihat hari libur mendatang langsung tanpa membuka aplikasi.
 
