@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_dark"
+        app:elevation="0dp">
+
+        <!-- Custom Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- App Title with Accent -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kapan"
+                    android:textColor="@color/on_primary"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-medium" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Libur"
+                    android:textColor="@color/accent_red"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-medium" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="?"
+                    android:textColor="@color/on_primary"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-medium" />
+
+            </LinearLayout>
+
+            <!-- Subtitle -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dp"
+                android:text="Daftar Hari Libur Nasional Indonesia"
+                android:textColor="@color/accent_gray"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif" />
+
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Modern Filter Section -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="@color/surface"
+                app:strokeWidth="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <!-- Filter Title -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Filter Hari Libur"
+                        android:textColor="@color/on_surface"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-medium"
+                        android:layout_marginBottom="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
+
+                        <!-- Year Filter -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="12dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Tahun"
+                                android:textColor="@color/on_surface_variant"
+                                android:textSize="12sp"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginStart="8dp" />
+
+                            <Spinner
+                                android:id="@+id/yearSpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:background="@drawable/spinner_background"
+                                android:padding="12dp" />
+
+                        </LinearLayout>
+
+                        <!-- Month Filter -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Bulan"
+                                android:textColor="@color/on_surface_variant"
+                                android:textSize="12sp"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginStart="8dp" />
+
+                            <Spinner
+                                android:id="@+id/monthSpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:background="@drawable/spinner_background"
+                                android:padding="12dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- Search Bar -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cari Hari Libur"
+                            android:textColor="@color/on_surface_variant"
+                            android:textSize="12sp"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginStart="8dp" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Contoh: Idul Fitri, Natal, Nyepi..."
+                            app:boxBackgroundMode="outline"
+                            app:boxCornerRadiusTopStart="12dp"
+                            app:boxCornerRadiusTopEnd="12dp"
+                            app:boxCornerRadiusBottomStart="12dp"
+                            app:boxCornerRadiusBottomEnd="12dp"
+                            app:boxStrokeColor="@color/primary_dark"
+                            app:hintTextColor="@color/on_surface_variant"
+                            app:startIconDrawable="@android:drawable/ic_menu_search"
+                            app:startIconTint="@color/on_surface_variant"
+                            app:endIconMode="clear_text"
+                            app:endIconTint="@color/on_surface_variant">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/searchEditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:textColor="@color/on_surface"
+                                android:textColorHint="@color/on_surface_variant"
+                                android:textSize="14sp" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Loading Indicator -->
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="48dp"
+                android:indeterminateTint="@color/primary_dark"
+                android:visibility="gone" />
+
+            <!-- Empty State -->
+            <LinearLayout
+                android:id="@+id/emptyState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:padding="32dp">
+
+                <!-- Empty Icon -->
+                <View
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/empty_state_background"
+                    android:layout_marginBottom="24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak Ada Hari Libur"
+                    android:textColor="@color/on_surface"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-medium" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Coba pilih tahun atau bulan yang berbeda"
+                    android:textColor="@color/on_surface_variant"
+                    android:textSize="14sp"
+                    android:textAlignment="center"
+                    android:fontFamily="sans-serif" />
+
+            </LinearLayout>
+
+            <!-- Holiday List -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:nestedScrollingEnabled="false"
+                android:paddingBottom="16dp"
+                tools:listitem="@layout/item_holiday" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

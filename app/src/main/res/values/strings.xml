@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">KapanLibur</string>
+    <string name="widget_title">Upcoming Holidays</string>
+    <string name="widget_loading">Loading...</string>
+    <string name="widget_no_holidays">No upcoming holidays</string>
+    <string name="widget_error">Error loading holidays</string>
+    <string name="widget_tap_to_refresh">Tap to refresh</string>
+    <string name="header_title">KapanLibur?</string>
+</resources>

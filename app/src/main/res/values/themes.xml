@@ -1,0 +1,49 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.KapanLibur" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary colors -->
+        <item name="colorPrimary">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+        <item name="colorPrimaryContainer">@color/primary_light</item>
+        <item name="colorOnPrimaryContainer">@color/on_surface</item>
+        
+        <!-- Surface colors -->
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/on_surface</item>
+        <item name="colorSurfaceVariant">@color/surface_variant</item>
+        <item name="colorOnSurfaceVariant">@color/on_surface_variant</item>
+        
+        <!-- Background -->
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorOnBackground">@color/on_surface</item>
+        
+        <!-- Outline -->
+        <item name="colorOutline">@color/outline</item>
+        
+        <!-- Status bar -->
+        <item name="android:statusBarColor">@color/primary_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="Theme.KapanLibur" parent="Base.Theme.KapanLibur" />
+    
+    <!-- Custom styles -->
+    <style name="HeaderTextStyle">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/on_surface</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    
+    <style name="HeaderTextAccent">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/accent_red</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    
+    <style name="CardStyle">
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">2dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="cardBackgroundColor">@color/surface</item>
+    </style>
+</resources>
