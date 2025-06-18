@@ -9,13 +9,17 @@ Aplikasi Android modern yang di buat dengan Kotlin untuk menampilkan hari libur 
 - **Filter Tahun dan bulan**: Pilih tahun berbeda untuk melihat hari libur.
 - **Pencarian**: Cari hari libur berdasarkan nama perayaan.
 
-<img src="preview/main_screen.jpg" alt="Gambar Main Screen" width="50%">
+<div align="center">
+  <img src="preview/main_screen.jpg" alt="Main Screen" width="50%">
+</div>
 
 ### 📅 Widget
 - **Hari Libur Mendatang**: Menampilkan dua hari libur mendatang.
 - **Tombol Refresh**: Refresh data hari libur jika gagal memuat data.
 
-<img src="preview/widget.png" alt="Gambar Widget" width="70%">
+<div align="center">
+  <img src="preview/widget.png" alt="Widget" width="70%">
+</div>
 
 ## Cara Instalasi dan Penggunaan
 
